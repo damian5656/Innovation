@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Productos</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+    }
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100">
+
+  <header class="bg-white bg-opacity-60 p-4 shadow sticky top-0 z-50 dark:bg-gray-800 dark:shadow-lg">
+    <div class="max-w-8xl mx-auto px-2 py-2 flex flex-col sm:flex-row justify-between items-center sm:space-y-0 space-y-4">
+      <div class="flex items-center space-x-6">
+        <img class="w-16 h-16 rounded-full object-cover" src="https://iili.io/3LJIYv4.th.jpg" alt="Logo">
+        <h1 class="text-3xl font-bold text-blue-700 dark:text-blue-400">Productos</h1>
+      </div>
+      <div class="w-full sm:w-auto max-w-md mx-auto sm:mx-0">
+        <input
+          type="text"
+          id="buscador"
+          placeholder="Buscar productos..."
+          class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-100"
+        />
+      </div>
+      <nav class="space-x-6 font-medium flex items-center mt-4 sm:mt-0">
+        <a href="paginaprincipal.html" class="text-black hover:text-blue-600 dark:hover:text-blue-400 transition">Inicio</a>
+        <a href="Productos.html" class="text-black hover:text-blue-600 dark:hover:text-blue-400 transition">Productos</a>
+        <a href="#contacto" class="text-black hover:text-blue-600 dark:hover:text-blue-400 transition">Contacto</a>
+        <a href="iniciars.html" class="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 transition">Iniciar Sesión</a>
+        <button id="theme-toggle" class="ml-4 text-xl focus:outline-none transition" title="Cambiar tema">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="fixed bottom-4 right-4 z-50 flex flex-col space-y-3">
+    <a href="#instrumentos-section" class="bg-blue-600 text-white p-4 rounded-lg shadow-xl hover:bg-blue-700 transition dark:bg-blue-500 dark:hover:bg-blue-600">
+      Instrumentos
+    </a>
+    <a href="#recursos-section" class="bg-blue-600 text-white p-4 rounded-lg shadow-xl hover:bg-blue-700 transition dark:bg-blue-500 dark:hover:bg-blue-600">
+      Recursos
+    </a>
+  </div>
+
+  <main class="max-w-6xl mx-auto p-6">
+    <h3 class="text-3xl font-bold text-center text-blue-800 dark:text-blue-400 mb-10" data-aos="fade-up">Nuestros Productos</h3>
+
+    <section id="instrumentos-section" class="mb-12">
+      <h3 class="text-2xl font-bold text-blue-700 dark:text-blue-400 mb-6" data-aos="fade-right">Instrumentos</h3>
+      <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-10">
+        <div class="producto bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX-RB2t88Eyp6hFZpMBL8pHFnZ52FfqiOkTQ&s" alt="Turbina Dental" class="rounded-t-xl h-50 w-full object-cover">
+          <div class="p-6">
+            <h4 class="text-xl font-semibold text-blue-800 dark:text-blue-400">Turbina Dental Alta Velocidad</h4>
+            <p class="text-gray-600 dark:text-gray-300 mt-2">Precisión y potencia para procedimientos avanzados.</p>
+            <span class="text-blue-700 dark:text-blue-300 font-bold text-lg block mt-3">$220 USD</span>
+            <button class="mt-4 w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 transition">Agregar al carrito</button>
+          </div>
+        </div>
+
+        <div class="producto bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
+          <img src="https://www.dentalcost.es/29262-thickbox_default/kit-exploracion-dental-basico-titanio-azul-masters.jpg" alt="Set de Exploración" class="rounded-t-xl h-50 w-full object-cover">
+          <div class="p-6">
+            <h4 class="text-xl font-semibold text-blue-800 dark:text-blue-400">Set de Exploración Odontológica</h4>
+            <p class="text-gray-600 dark:text-gray-300 mt-2">Instrumentos básicos de alta precisión y durabilidad.</p>
+            <span class="text-blue-700 dark:text-blue-300 font-bold text-lg block mt-3">$45 USD</span>
+            <button class="mt-4 w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 transition">Agregar al carrito</button>
+          </div>
+        </div>
+
+        <div class="producto bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
+          <img src="https://www.dentalcastro.com.uy/wp-content/uploads/2020/02/contra-angle-handpiece-we-56-t_zoomproductdetails.jpg" alt="Pieza de Mano Contra-ángulo" class="rounded-t-xl h-50 w-full object-cover">
+          <div class="p-6">
+            <h4 class="text-xl font-semibold text-blue-800 dark:text-blue-400">Pieza de Mano Contra-ángulo</h4>
+            <p class="text-gray-600 dark:text-gray-300 mt-2">Utilizada para procedimientos más delicados, permite mejor control.</p>
+            <span class="text-blue-700 dark:text-blue-300 font-bold text-lg block mt-3">$180 USD</span>
+            <button class="mt-4 w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 transition">Agregar al carrito</button>
+          </div>
+        </div>
+
+        <div class="producto bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
+          <img src="https://lh4.googleusercontent.com/proxy/wTYyd9vraZzCaBpuh52faZiNV4NYOUvp6Wj6-EqTSVgCwqnk-RBcz6hOYIXB6_l99yJVDKQSlH25plSdKUw9Ss6gdm-rPGJeAyZxd7PVsH48VZqVEyeh50I_scc" alt="Bandeja de Instrumental" class="rounded-t-xl h-50 w-full object-cover">
+          <div class="p-6">
+            <h4 class="text-xl font-semibold text-blue-800 dark:text-blue-400">Bandeja de Instrumental de Acero Inoxidable</h4>
+            <p class="text-gray-600 dark:text-gray-300 mt-2">Superficie segura y esterilizable para colocar instrumentos.</p>
+            <span class="text-blue-700 dark:text-blue-300 font-bold text-lg block mt-3">$25 USD</span>
+            <button class="mt-4 w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 transition">Agregar al carrito</button>
+          </div>
+        </div>
+
+        <div class="producto bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
+          <img src="https://www.dentaltix.com/es/sites/default/files/jeringa-triple-de-bader.jpg" alt="Jeringa Triple" class="rounded-t-xl h-50 w-full object-cover">
+          <div class="p-6">
+            <h4 class="text-xl font-semibold text-blue-800 dark:text-blue-400">Jeringa Triple (aire, agua, spray)</h4>
+            <p class="text-gray-600 dark:text-gray-300 mt-2">Herramienta de limpieza y secado intraoral.</p>
+            <span class="text-blue-700 dark:text-blue-300 font-bold text-lg block mt-3">$65 USD</span>
+            <button class="mt-4 w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 transition">Agregar al carrito</button>
+          </div>
+        </div>
+
+        <div class="producto bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
+          <img src="https://www.tudepositodental.com/166-large_default/lampara-fotocurado-led-inalambrica-woodpecker-led-b.jpg" alt="Lámpara de Fotocurado LED" class="rounded-t-xl h-50 w-full object-cover">
+          <div class="p-6">
+            <h4 class="text-xl font-semibold text-blue-800 dark:text-blue-400">Lámpara de Fotocurado LED</h4>
+            <p class="text-gray-600 dark:text-gray-300 mt-2">Endurece resinas en segundos mediante luz UV.</p>
+            <span class="text-blue-700 dark:text-blue-300 font-bold text-lg block mt-3">$150 USD</span>
+            <button class="mt-4 w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 transition">Agregar al carrito</button>
+          </div>
+        </div>
+
+        <div class="producto bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
+          <img src="https://www.dentaltix.com/es/sites/default/files/pieza-de-mano-ultrasonica-led.jpg" alt="Detartrador Ultrasónico" class="rounded-t-xl h-50 w-full object-cover">
+          <div class="p-6">
+            <h4 class="text-xl font-semibold text-blue-800 dark:text-blue-400">Detartrador Ultrasónico</h4>
+            <p class="text-gray-600 dark:text-gray-300 mt-2">Elimina sarro y placa mediante vibración ultrasónica.</p>
+            <span class="text-blue-700 dark:text-blue-300 font-bold text-lg block mt-3">$280 USD</span>
+            <button class="mt-4 w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 transition">Agregar al carrito</button>
+          </div>
+        </div>
+
+        <div class="producto bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
+          <img src="https://m.media-amazon.com/images/I/61dib50YFTL.jpg" alt="Espejos Bucales" class="rounded-t-xl h-50 w-full object-cover">
+          <div class="p-6">
+            <h4 class="text-xl font-semibold text-blue-800 dark:text-blue-400">Espejos Bucales (Pack x5)</h4>
+            <p class="text-gray-600 dark:text-gray-300 mt-2">Para inspección visual indirecta.</p>
+            <span class="text-blue-700 dark:text-blue-300 font-bold text-lg block mt-3">$15 USD</span>
+            <button class="mt-4 w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 transition">Agregar al carrito</button>
+          </div>
+        </div>
+
+        <div class="producto bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
+          <img src="https://http2.mlstatic.com/D_NQ_NP_735769-MLU77778790542_072024-O.webp" alt="Porta Agujas Mayo-Hegar" class="rounded-t-xl h-50 w-full object-cover">
+          <div class="p-6">
+            <h4 class="text-xl font-semibold text-blue-800 dark:text-blue-400">Porta Agujas Mayo-Hegar</h4>
+            <p class="text-gray-600 dark:text-gray-300 mt-2">Instrumento de sujeción para suturas.</p>
+            <span class="text-blue-700 dark:text-blue-300 font-bold text-lg block mt-3">$40 USD</span>
+            <button class="mt-4 w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 transition">Agregar al carrito</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="recursos-section">
+      <h3 class="text-2xl font-bold text-blue-700 dark:text-blue-400 mb-6" data-aos="fade-right">Recursos</h3>
+      <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-10">
+        <div class="producto bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
+          <img src="https://i0.wp.com/colorcity.com.uy/wp-content/uploads/2022/09/20220317_9000310_Packaging_Mano-wpv_600pxx600px.jpg?fit=600%2C600&ssl=1" alt="Guantes de Nitrilo" class="rounded-t-xl h-50 w-full object-cover">
+          <div class="p-6">
+            <h4 class="text-xl font-semibold text-blue-800 dark:text-blue-400">Guantes de Nitrilo (100 u)</h4>
+            <p class="text-gray-600 dark:text-gray-300 mt-2">Libres de látex, resistentes y cómodos para jornadas largas.</p>
+            <span class="text-blue-700 dark:text-blue-300 font-bold text-lg block mt-3">$19 USD</span>
+            <button class="mt-4 w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 transition">Agregar al carrito</button>
+          </div>
+        </div>
+
+        <div class="producto bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
+          <img src="https://www.parafarmic.com/5895-large_default/mascarillas-quirurgicas-3-capas-tipo-iir-con-gomas.jpg" alt="Mascarilla Quirúrgica" class="rounded-t-xl h-50 w-full object-cover">
+          <div class="p-6">
+            <h4 class="text-xl font-semibold text-blue-800 dark:text-blue-400">Mascarilla Quirúrgica 3 Capas (50 unidades)</h4>
+            <p class="text-gray-600 dark:text-gray-300 mt-2">Protección básica contra aerosoles y salpicaduras.</p>
+            <span class="text-blue-700 dark:text-blue-300 font-bold text-lg block mt-3">$10 USD</span>
+            <button class="mt-4 w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 transition">Agregar al carrito</button>
+          </div>
+        </div>
+
+        <div class="producto bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
+          <img src="https://ae01.alicdn.com/kf/S56e5a6de44b74b459f94fefc2507f15ca.jpg?width=1000&height=1000&hash=2000" alt="Eyector de Saliva Desechable" class="rounded-t-xl h-50 w-full object-cover">
+          <div class="p-6">
+            <h4 class="text-xl font-semibold text-blue-800 dark:text-blue-400">Eyector de Saliva Desechable (25 unidades)</h4>
+            <p class="text-gray-600 dark:text-gray-300 mt-2">Tubos flexibles para eliminar saliva durante el procedimiento.</p>
+            <span class="text-blue-700 dark:text-blue-300 font-bold text-lg block mt-3">$7 USD</span>
+            <button class="mt-4 w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 transition">Agregar al carrito</button>
+          </div>
+        </div>
+
+        <div class="producto bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
+          <img src="https://i.ebayimg.com/thumbs/images/g/1voAAOSwz2JbZ5pq/s-l140.jpg" alt="Eyectores de Saliva Reutilizables" class="rounded-t-xl h-50 w-full object-cover">
+          <div class="p-6">
+            <h4 class="text-xl font-semibold text-blue-800 dark:text-blue-400">Eyectores de Saliva Reutilizables (Pack x10)</h4>
+            <p class="text-gray-600 dark:text-gray-300 mt-2">Alternativa duradera a los desechables</p>
+            <span class="text-blue-700 dark:text-blue-300 font-bold text-lg block mt-3">$12 USD</span>
+            <button class="mt-4 w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 transition">Agregar al carrito</button>
+          </div>
+        </div>
+
+        <div class="producto bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
+          <img src="https://macrodent.com.co/2056-large_default/resina-compuesta-fotopolimerizable-zafira.jpg" alt="Resina Compuesta Fotopolimerizable" class="rounded-t-xl h-50 w-full object-cover">
+          <div class="p-6">
+            <h4 class="text-xl font-semibold text-blue-800 dark:text-blue-400">Resina Compuesta Fotopolimerizable (Siringa)</h4>
+            <p class="text-gray-600 dark:text-gray-300 mt-2">Material restaurador estético de uso directo.</p>
+            <span class="text-blue-700 dark:text-blue-300 font-bold text-lg block mt-3">$30 USD</span>
+            <button class="mt-4 w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 transition">Agregar al carrito</button>
+          </div>
+        </div>
+
+        <div class="producto bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
+          <img src="https://www.newstetic.com/wp-content/uploads/2021/03/nu-alloy-capsula.jpg" alt="Amalgama Dental" class="rounded-t-xl h-50 w-full object-cover">
+          <div class="p-6">
+            <h4 class="text-xl font-semibold text-blue-800 dark:text-blue-400">Amalgama Dental (cápsulas)</h4>
+            <p class="text-gray-600 dark:text-gray-300 mt-2">Restauración metálica duradera.</p>
+            <span class="text-blue-700 dark:text-blue-300 font-bold text-lg block mt-3">$35 USD</span>
+            <button class="mt-4 w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 transition">Agregar al carrito</button>
+          </div>
+        </div>
+
+        <div class="producto bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
+          <img src="https://medicaline.es/wp-content/uploads/2019/01/ml62105_cementoionomero_productocaja_1476580402.jpg" alt="Cemento de Ionómero de Vidrio" class="rounded-t-xl h-50 w-full object-cover">
+          <div class="p-6">
+            <h4 class="text-xl font-semibold text-blue-800 dark:text-blue-400">Cemento de Ionómero de Vidrio</h4>
+            <p class="text-gray-600 dark:text-gray-300 mt-2">Ideal para obturaciones temporales.</p>
+            <span class="text-blue-700 dark:text-blue-300 font-bold text-lg block mt-3">$25 USD</span>
+            <button class="mt-4 w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 transition">Agregar al carrito</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-white dark:bg-gray-900 text-center py-6 text-sm text-gray-500 dark:text-gray-400">
+    © 2025 OdontoPlus. Todos los derechos reservados.
+  </footer>
+
+  <script>
+    AOS.init();
+
+    const toggle = document.getElementById('theme-toggle');
+    const html = document.documentElement;
+
+    if (localStorage.theme === 'dark' ||
+        (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      html.classList.add('dark');
+      toggle.textContent = '🌞';
+    } else {
+      html.classList.remove('dark');
+      toggle.textContent = '🌙';
+    }
+
+    toggle.addEventListener('click', () => {
+      html.classList.toggle('dark');
+      const isDark = html.classList.contains('dark');
+      localStorage.theme = isDark ? 'dark' : 'light';
+      toggle.textContent = isDark ? '🌞' : '🌙';
+    });
+
+    
+    const buscador = document.getElementById('buscador');
+    const productos = Array.from(document.querySelectorAll('.producto'));
+
+    buscador.addEventListener('input', (e) => {
+      const texto = e.target.value.toLowerCase();
+
+      productos.forEach(producto => {
+        const nombre = producto.querySelector('h4').textContent.toLowerCase();
+        const descripcion = producto.querySelector('p').textContent.toLowerCase();
+
+        if (nombre.includes(texto) || descripcion.includes(texto)) {
+          producto.classList.remove('hidden');
+        } else {
+          producto.classList.add('hidden');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

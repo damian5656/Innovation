@@ -1,0 +1,144 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Estructura */
+.header {
+  background-color: white;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.header.dark {
+  background-color: #1f2937;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1d4ed8;
+}
+
+.nav a {
+  margin-left: 1rem;
+  color: inherit;
+  transition: color 0.2s;
+}
+
+.btn-login {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.25rem 1rem;
+  border-radius: 0.375rem;
+}
+
+.hero {
+  position: relative;
+  height: 500px;
+  text-align: center;
+}
+
+.hero-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.5);
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+  padding: 1rem;
+  color: white;
+}
+
+.btn-primary {
+  margin-top: 1rem;
+  display: inline-block;
+  background-color: #1d4ed8;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+}
+
+.productos {
+  padding: 4rem 1rem;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #1e3a8a;
+}
+
+.grid-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+.producto-card.dark{
+      background-color: #1f2937;
+}
+.producto-card {
+  background-color: white;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.producto-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.producto-info {
+  padding: 1rem;
+}
+
+.producto-info h4 {
+  color: #1e3a8a;
+}
+
+.contacto {
+  background-color: #eff6ff;
+  padding: 4rem 1rem;
+}
+
+.form-contacto {
+  display: grid;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-contacto input,
+.form-contacto textarea {
+  padding: 0.75rem;
+  border-radius: 0.375rem;
+  border: 1px solid #bfdbfe;
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
